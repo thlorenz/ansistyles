@@ -1,6 +1,6 @@
 {
   "name": "ansistyles",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Functions that surround a string with ansistyle codes so it prints in style.",
   "main": "ansistyles.js",
   "scripts": {
