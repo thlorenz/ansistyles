@@ -9,11 +9,11 @@ Functions that surround a string with ansistyle codes so it prints in style.
 ## Usage
 
 ```js
-  var styles = require('ansistyles');
+var styles = require('ansistyles');
 
-  console.log(styles.bright('hello world'));    // prints hello world in 'bright' white
-  console.log(styles.underline('hello world')); // prints hello world underlined
-  console.log(styles.inverse('hello world'));   // prints hello world black on white
+console.log(styles.bright('hello world'));    // prints hello world in 'bright' white
+console.log(styles.underline('hello world')); // prints hello world underlined
+console.log(styles.inverse('hello world'));   // prints hello world black on white
 ```
 
 ## Combining with ansicolors
@@ -23,11 +23,12 @@ Get the ansicolors module:
     npm install ansicolors
 
 ```js
-  var styles = require('ansistyles')
-    , colors = require('ansicolors');
+var styles = require('ansistyles')
+  , colors = require('ansicolors');
 
   console.log(
-    colors.bgGreen(colors.blue(styles.underline('hello world'))) // prints hello world underlined in red on green background
+    // prints hello world underlined in red on a green background
+    colors.bgGreen(colors.blue(styles.underline('hello world'))) 
   );
 ```
 
