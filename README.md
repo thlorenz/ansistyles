@@ -45,6 +45,24 @@ but didn't have any effect on the terminals that I tested on Mac Lion and Ubuntu
 
 I included them for completeness, but didn't show them in the examples because they seem to have no effect.
 
+### reset
+
+A style reset function is also included, please note however that this is not nestable.
+
+Therefore the below only underlines `hell` only, but not `world`.
+
+```js
+console.log(styles.underline('hell' + styles.reset('o') + ' world'));
+```
+
+It is essentially the same as:
+
+```js
+console.log(styles.underline('hell') + styles.reset('') + 'o world');
+```
+
+
+
 ## Alternatives
 
 **ansistyles** tries to meet simple use cases with a very simple API. However, if you need a more powerful ansi formatting tool, 

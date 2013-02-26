@@ -16,7 +16,8 @@
  */
 
 var styleNums = {
-    bright    :  [1, 22]
+    reset     :  [0, 22]
+  , bright    :  [1, 22]
   , dim       :  [2, 22]
   , italic    :  [3, 23]
   , underline :  [4, 24]
